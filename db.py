@@ -6,7 +6,6 @@ c = db.cursor()
 
 
 def User(name,email,password):
-    
     script = f'INSERT INTO users(name,email,password) VALUES("{name}","{email}","{password}");'
     c.execute(script)
     db.commit()
