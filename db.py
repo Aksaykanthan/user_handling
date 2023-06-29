@@ -17,6 +17,7 @@ def login(user,password):
     data = c.fetchall()
     
     if data:
-        c.execute(f'INSERT INTO log VALUES("{user}","{}")')
+        date,time = str(datetime.today()).split()
+        c.execute(f'INSERT INTO log VALUES("{user}","{time}","")')
+        db.commit()
         
-    

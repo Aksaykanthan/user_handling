@@ -1,6 +1,6 @@
 
-import datetime
+from  datetime import *
 
 
 
-print(help(max))
+print(str(datetime.today()).split())
