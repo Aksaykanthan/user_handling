@@ -1,11 +1,10 @@
 from tkinter import *
-from db import User
+from db import login
 
 def Submit():
     name = namee.get()
-    email = emaile.get()
     password = passe.get()
-    User(name,email,password)
+    login(name,password)
 
 root = Tk()
 root.geometry('400x400')
@@ -16,9 +15,7 @@ namel = Label(text = 'Name').pack()
 namee = Entry()
 namee.pack()
 
-emaill = Label(text = 'Email').pack()
-emaile = Entry()
-emaile.pack()
+
 
 passl = Label(text = 'Password').pack()
 passe = Entry()

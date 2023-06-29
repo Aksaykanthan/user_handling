@@ -1,6 +1,0 @@
-
-from  datetime import *
-
-
-
-print(str(datetime.today()).split())
