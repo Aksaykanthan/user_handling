@@ -1,4 +1,4 @@
-from tkinter import *
+from tkinter import Button, Entry, Label, Tk
 from db import login
 
 def Submit():
